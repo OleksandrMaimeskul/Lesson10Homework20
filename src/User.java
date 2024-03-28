@@ -13,14 +13,12 @@ public class User {
         public Account(String password) {
             this.password = password;
         }
-
         public void displayAccount() {
             System.out.printf("Account Login successful! Login: %s, Password: %s ", login, password);
         }
-
     }
-    public void displayAccount() {
-        account.displayAccount();
+    public Account getAccount() {
+        return account;
     }
 }
 
